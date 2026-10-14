@@ -1,0 +1,35 @@
+{
+  "program_name": "NIAT (NxtWave Institute of Advanced Technologies)",
+  "_note": "Grounding facts for the agent. Only claims listed here may be made about NIAT. Verify every figure against current official NIAT material before production use.",
+  "format": {
+    "duration": "4-year undergraduate program",
+    "mode": "On-campus, full-time",
+    "degree": "Delivered in collaboration with partner universities, so students graduate with a recognised degree"
+  },
+  "fees": {
+    "total_program_fee_range_inr": "₹8 Lakh – ₹18 Lakh (varies by partner university and campus)"
+  },
+  "curriculum": {
+    "philosophy": "Applied, industry-aligned tech curriculum instead of legacy theory-heavy syllabi",
+    "hands_on_from": "Day 1 — students build real projects from the first semester",
+    "tech_stack": [
+      "Full-stack web development (HTML, CSS, JavaScript, React, Node.js)",
+      "Python programming and Data Structures & Algorithms",
+      "Databases (SQL and NoSQL)",
+      "Generative AI and building applications with LLMs",
+      "Cloud and deployment fundamentals",
+      "Git and modern developer tooling"
+    ],
+    "update_cadence": "Curriculum is updated regularly to track what the industry is hiring for"
+  },
+  "career_outcomes": {
+    "internships": "Early internship opportunities during the program",
+    "stipend": "Internship stipends of up to ₹15,000 per month",
+    "highest_package": "₹80 LPA (highest recorded package)",
+    "placement_support": "Dedicated placement support, mock interviews and career coaching"
+  },
+  "learning_environment": {
+    "pedagogy": "Project-based learning with mentorship from industry practitioners",
+    "soft_skills": "Communication and interview-readiness training integrated into the program"
+  }
+}
