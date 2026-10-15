@@ -73,6 +73,18 @@ curl -X POST localhost:8000/compare -H 'Content-Type: application/json' \
 
 A request takes roughly 30–60 seconds.
 
+The Streamlit app talks to the FastAPI backend only when `BACKEND_URL` is set. If it isn't, the app runs the agent and voice synthesis in-process, so `uv run streamlit run app.py` alone is enough.
+
+## Deploy on Streamlit Community Cloud
+
+1. On https://share.streamlit.io, create an app from this repo with `app.py` as the main file.
+2. Under **Advanced settings → Secrets**, add:
+   ```toml
+   LLM_API_KEY = "your-gemini-key"
+   TAVILY_API_KEY = "tvly-your-key"
+   ```
+3. Do **not** set `BACKEND_URL`; the app runs everything in-process.
+
 ## Configuration
 
 | Variable | Default | Purpose |
@@ -81,7 +93,7 @@ A request takes roughly 30–60 seconds.
 | `TAVILY_API_KEY` | – (required) | Tavily search key |
 | `LLM_BASE_URL` | Gemini's OpenAI-compatible endpoint | Switch to another OpenAI-compatible provider (e.g. Groq, OpenAI) |
 | `LLM_MODEL` | `gemini-flash-lite-latest` | Model name |
-| `BACKEND_URL` | `http://localhost:8000` | Where the Streamlit app reaches the backend |
+| `BACKEND_URL` | unset | If set, the Streamlit app calls this FastAPI backend instead of running the agent in-process |
 
 ## Notes
 
